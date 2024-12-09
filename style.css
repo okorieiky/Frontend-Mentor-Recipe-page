@@ -11,12 +11,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
-  height: 175vh;
+  height: 185vh;
 }
 
 .container {
   margin: 3rem;
-  width: 40%;
+  width: 40vw;
+  height: 170vh;
   background-color: white;
   border-radius: 1.3rem;
 }
@@ -97,6 +98,7 @@ img {
 
 .nutri {
   margin: 2rem 5rem;
+  margin-bottom: 2rem;
 }
 
 .nutri h1 {
@@ -140,4 +142,70 @@ tr {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Mobile-specific styles */
+@media (max-width: 375px) {
+  body {
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .container {
+    margin: 0.5rem;
+    width: 100%; /* Full width */
+    height: 50%;
+  }
+  .img {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 1.6rem; /* Adjust font size */
+  }
+
+  .text p {
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5;
+  }
+
+  .prep {
+    padding: 1.5rem; /* Reduced padding for mobile */
+    margin-left: 0; /* No margin for mobile */
+  }
+
+  .prep h1 {
+    font-size: 1.4rem; /* Smaller font for mobile */
+  }
+
+  .ingred,
+  .instr,
+  .nutri {
+    margin: 0.5rem; /* Adjust margin */
+  }
+
+  .ingred h1,
+  .instr h1,
+  .nutri h1 {
+    font-size: 1.5rem; /* Adjusted font size */
+  }
+
+  .ingred li,
+  .instr li,
+  .nutri p {
+    font-size: 1rem; /* Adjusted font size */
+  }
+
+  table {
+    display: block; /* Stacked table rows */
+  }
+
+  tr {
+    display: block; /* Stack table rows */
+    gap: 1rem; /* Reduced gap */
+    padding-top: 1rem;
+  }
 }
