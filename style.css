@@ -11,7 +11,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
-  height: 145rem;
+  height: 175vh;
 }
 
 .container {
